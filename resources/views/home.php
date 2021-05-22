@@ -7,7 +7,13 @@
   <title>PHP</title>
 </head>
 <body>
-  <h1>Hello world</h1>
-  <a href="{{url('/home/faq')}}">Pindah FAQ</a>
+  <!-- Navbar menu -->
+<nav>
+<a href="{{url('/home/beranda0092')}}">beranda</a>
+<a href="{{url('/home/artikel0092')}}">artikel</a>
+<a href="{{url('/home/faq')}}">contact</a>
+  </nav>
+  <h1>welcome</h1>
+  
 </body>
 </html>

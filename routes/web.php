@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Controllers\ArtikelController as ControllersArtikelController;
+use App\Http\Controllers\BerandaController as ControllersBerandaController;
+use App\Http\Controllers\FaqController as ControllersFaqController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +24,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', [HomeController::class, 'index']);
-Route::get('/home/faq', [HomeController::class, 'faq']);
+Route::get('/home/faq', [FaqController::class, 'faq']);
+Route::get('/home/beranda', [BerandaController::class, 'beranda']);
+Route::get('/home/artikel', [ArtikelController::class, 'artikel']);
